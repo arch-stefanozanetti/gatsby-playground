@@ -1,97 +1,68 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Starter for the official Gatsby blog theme
-</h1>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Quickly get started using the Gatsby blog theme! This starter creates a new Gatsby site that is preconfigured to work with the [official Gatsby blog theme](https://www.npmjs.com/package/gatsby-theme-blog).
+## Available Scripts
 
-## 🚀 Quick start
+In the project directory, you can run:
 
-1.  **Create a Gatsby site.**
+### `yarn start`
 
-    Use the Gatsby CLI to create a new site, specifying the blog theme starter.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-    ```shell
-    # create a new Gatsby site using the blog theme starter
-    gatsby new my-themed-blog https://github.com/gatsbyjs/gatsby-starter-blog-theme
-    ```
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-2.  **Start developing.**
+### `yarn test`
 
-    Navigate into your new site’s directory and start it up.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-    ```shell
-    cd my-themed-blog/
-    gatsby develop
-    ```
+### `yarn build`
 
-3.  **Open the code and start customizing!**
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-    Your site is now running at `http://localhost:8000`!
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-    To get started, check out the guide to [using the Gatsby blog theme starter](https://gatsbyjs.org/docs/themes/using-a-gatsby-theme), or the longer, [more detailed tutorial](https://gatsbyjs.org/tutorial/using-a-theme).
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 🧐 What's inside?
+### `yarn eject`
 
-Here are the top-level files and directories you'll see in a site created using the blog theme starter:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```text
-gatsby-starter-blog-theme
-├── content
-│   ├── assets
-│   │   └── avatar.png
-│   └── posts
-│       ├── hello-world.mdx
-│       └── my-second-post.mdx
-├── src
-│   └── gatsby-theme-blog
-│       ├── components
-│       │   └── bio-content.js
-│       └── gatsby-theme-ui
-│           └── colors.js
-├── .gitignore
-├── .prettierrc
-├── gatsby-config.js
-├── LICENSE
-├── package-lock.json
-├── package.json
-└── README.md
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1.  **`/content`**: A content folder holding assets that the theme expects to exist. This will vary from theme to theme -- this starter is set up to get you started with the blog theme, which expects an image asset for your avatar, and blog post content. Replace the avatar image file, delete the demo posts, and add your own!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-2.  **`/src`**: You will probably want to customize your site to personalize it. The files under `/src/gatsby-theme-blog` _shadow_, or override, the files of the same name in the `gatsby-theme-blog` package. To learn more about this, check out the [guide to getting started with using the blog theme starter](https://gatsbyjs.org/docs/themes/using-a-gatsby-theme).
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Learn More
 
-4.  **`.prettierrc`**: This file tells [Prettier](https://prettier.io/) which configuration it should use to lint files.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. When using themes, it's where you'll include the theme plugin, and any customization options the theme provides.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-6.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+### Code Splitting
 
-7.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+### Analyzing the Bundle Size
 
-9.  **`README.md`**: A text file containing useful reference information about your project.
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## 🎓 Learning Gatsby
+### Making a Progressive Web App
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-Here are some places to start:
+### Advanced Configuration
 
-### Themes
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
+### Deployment
 
-### General
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+### `yarn build` fails to minify
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
