@@ -34,25 +34,47 @@ body {
     @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
     @include padding($top: 70px, $right: 15%, $bottom: 70px, $left: 15%);
     @include backgroundColor($lighterGrey);
-
 }
 
-
 .cardWrapper {
-    @include divDimensions (auto, auto, $max-width: 33%, $max-height: auto, $min-width: null, $min-height: 300px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include divDimensions (auto, auto, $max-width: 33%, $max-height: auto, $min-width: 300px, $min-height: 300px); //@include backgroundColor($primary, $opacity: 0.5);
     @include flexContainer ($direction: column, $align-items: center, $align-content: center, $justify-content: space-between, $flex-wrap: null);
     @include position($position: relative);
     @include margin($top: null, $right: 20px, $bottom: null, $left: 20px);
+    @include backgroundColor($white);
 
-    z-index: 1;
     box-sizing: border-box;
 
     @include excludeDesktop {
         @include divDimensions (100%, 88%, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 600px); //@include backgroundColor($primary, $opacity: 0.5);
-
         @include margin($top: 70px, $right: $zero, $bottom: $zero, $left: $zero);
         @include flexContainer ($direction: column, $align-items: top, $align-content: top, $justify-content: top, $flex-wrap: null);
     }
 }
 
 
+.BannerWrapper{
+    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
+    @include padding($top: 70px, $right: 15%, $bottom: 70px, $left: 15%);
+    
+        &.right{
+            @include backgroundColor($black);
+            @include flexContainer ($direction: row-reverse, $align-items: null, $align-content: null, $justify-content: null, $flex-wrap: null);
+        }
+}
+
+.textWrapper{
+        &.right{
+            color: $white;
+            @include flexContainer ($direction: column, $align-items: null, $align-content: null, $justify-content: flex-start, $flex-wrap: null);
+        }
+        &.left{
+            color: $black;
+            @include flexContainer ($direction: column, $align-items: flex-end, $align-content: flex-end, $justify-content: flex-end, $flex-wrap: null);
+        }
+}
+
+.bannerImage{
+    @include divDimensions (70%, 100%, $max-width: null, $max-height: auto, $min-width: null, $min-height: null); 
+}
