@@ -1,0 +1,26 @@
+[
+    {
+        "id": "we-are",
+        "name": "We Are",
+        "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
+        "buttonName": "the players"
+    },{
+        "id": "we-do",
+        "name": "We Do",
+        "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
+        "buttonName": "the projects"
+    },{
+        "id": "career",
+        "name": "Career",
+        "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
+        "buttonName": "the positions",
+        "image": ""
+    },{
+        "id": "contacts",
+        "name": "Contact Us",
+        "content": "Playground Srl",
+        "Address_1": "Via G. Mazzini 3/C,",
+        "Address_2": "Cernusco Sul Naviglio (Milano)",
+        "telephone": "+39 0240706003"
+    }
+]
