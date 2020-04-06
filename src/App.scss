@@ -1,0 +1,58 @@
+@import "./scss/normalize.css";
+@import "./scss/layout";
+@import "./scss/scrollbar";
+@import "./scss/buttons";
+@import "./scss/logos";
+@import "./scss/texts";
+@import "./scss/colors";
+@import "./scss/navbar/navbar.scss";
+
+$zero: 0px;
+$presetBorder: 1px;
+$presetMargin: 10px;
+$presetPadding: 10px;
+$heroMargin: 30px;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    @include margin($top: $zero, $right: $zero, $bottom: $zero, $left: $zero);
+    @include padding($top: $zero, $right: $zero, $bottom: $zero, $left: $zero);
+}
+
+
+
+.CardSection{
+    @include divDimensions (100%, auto, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: null); //@include backgroundColor($primary, $opacity: 0.5);
+    @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
+    @include padding($top: 70px, $right: 15%, $bottom: 70px, $left: 15%);
+    @include backgroundColor($lighterGrey);
+
+}
+
+
+.cardWrapper {
+    @include divDimensions (auto, auto, $max-width: 33%, $max-height: auto, $min-width: null, $min-height: 300px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include flexContainer ($direction: column, $align-items: center, $align-content: center, $justify-content: space-between, $flex-wrap: null);
+    @include position($position: relative);
+    @include margin($top: null, $right: 20px, $bottom: null, $left: 20px);
+
+    z-index: 1;
+    box-sizing: border-box;
+
+    @include excludeDesktop {
+        @include divDimensions (100%, 88%, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 600px); //@include backgroundColor($primary, $opacity: 0.5);
+
+        @include margin($top: 70px, $right: $zero, $bottom: $zero, $left: $zero);
+        @include flexContainer ($direction: column, $align-items: top, $align-content: top, $justify-content: top, $flex-wrap: null);
+    }
+}
+
+

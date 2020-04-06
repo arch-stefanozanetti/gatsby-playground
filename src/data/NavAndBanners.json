@@ -3,18 +3,22 @@
         "id": "we-are",
         "name": "We Are",
         "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
-        "buttonName": "the players"
+        "buttonName": "the players",
+        "image": "banner-we-are"
+
     },{
         "id": "we-do",
         "name": "We Do",
         "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
-        "buttonName": "the projects"
+        "buttonName": "the projects",
+        "image": "banner-we-do"
+
     },{
         "id": "career",
         "name": "Career",
         "content": "Consectetur adipiscing elit. Nulla condimentum tortor sem.",
         "buttonName": "the positions",
-        "image": ""
+        "image": "banner-carrers"
     },{
         "id": "contacts",
         "name": "Contact Us",

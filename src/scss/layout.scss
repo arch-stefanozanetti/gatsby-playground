@@ -1,0 +1,132 @@
+@import "./media-queries";
+@import "./colors";
+
+/**div dimentions properties**/
+@mixin divDimensions ($width, $height, $max-width: auto, $max-height: auto, $min-width: auto, $min-height: auto) {
+  height: $height;
+  width: $width;
+  max-height: $max-height;
+  max-width: $max-width;
+  min-height: $min-height;
+  min-width: $min-width;
+
+}
+
+/**display properties**/
+//flex
+@mixin flexContainer ($direction: null, $align-items: null, $align-content: null, $justify-content: null, $flex-wrap: null) {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+  align-items: $align-items;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+}
+
+//flex-children
+@mixin flexChildren ($flex-grow: null, $flex-shrink: null, $flex-basis: null) {
+  flex-grow: $flex-grow;
+  flex-shrink: $flex-shrink;
+  flex-basis: $flex-basis;
+}
+
+//others display properties
+@mixin display ($display) {
+  @if $display==none {
+    display: $display;
+  }
+
+  @else if $display==block {
+    display: $display;
+  }
+
+  @else if $display==inline {
+    display: $display;
+  }
+
+  @else if $display==inline-block {
+    display: $display;
+  }
+}
+
+/**background properties**/
+@mixin backgroundColor ($background-color:null, $opacity:null) {
+  background-color: $background-color;
+  opacity: $opacity;
+}
+
+@mixin backgroundImage ($background-color: null, $background-image-url: null, $background-position: null, $background-repeat: null, $background-size: null) {
+  background-color: $background-color;
+  background-image: url($background-image-url);
+  background-position: $background-position;
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+}
+
+/**positions properties**/
+@mixin position($position: null, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/**padding properties**/
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+/**margin properties**/
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+
+/**border properties**/
+//border-radius
+@mixin border($border-radius: null, $border-style: null, $border-width: null, $border-color: null, $border-left-width: null, $border-top-width: null, $border-right-width: null, $border-bottom-width: null) {
+  border-radius: $border-radius;
+  border-style: $border-style;
+  border-width: $border-width;
+  border-left-width: $border-left-width;
+  border-top-width: $border-top-width;
+  border-right-width: $border-right-width;
+  border-bottom-width: $border-bottom-width;
+  border-color: $border-color;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+
+}
+
+
+
+/**text display properties**/
+@mixin text($text-color: null, $letter-spacing: null, $line-height: null, $text-align: null, $text-decoration: null, $text-shadow: null, $text-transform: null) {
+  letter-spacing: $letter-spacing;
+  color: $text-color;
+  line-height: $line-height;
+  text-align: $text-align;
+  text-decoration: $text-decoration;
+  text-shadow: $text-shadow;
+  text-transform: $text-transform;
+}
+
+
+
+/**font properties**/
+@mixin font($font-family: null, $font-size:null, $font-style: null, $font-weight: null) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+}

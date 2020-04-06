@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,gBAAgB",
+    "sources": [
+        "image-path.scss"
+    ],
+    "names": [],
+    "file": "image-path.css"
+}

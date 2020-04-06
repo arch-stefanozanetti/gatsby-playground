@@ -1,0 +1,56 @@
+/**global colors**/
+/**global colors**/
+/**div dimentions properties**/
+/**display properties**/
+/**background properties**/
+/**positions properties**/
+/**padding properties**/
+/**margin properties**/
+/**border properties**/
+<<<<<<< HEAD
+.navbar {
+  background-color: #b7d4ce;
+  height: 100vh;
+  width: 70px;
+  max-height: auto;
+=======
+/**text display properties**/
+/**font properties**/
+.navbar {
+  background-color: #b7d4ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  width: 70px;
+  max-height: 100vh;
+>>>>>>> 11/27
+  max-width: auto;
+  min-height: auto;
+  min-width: auto;
+  position: fixed;
+  right: 0%;
+  border-style: solid;
+<<<<<<< HEAD
+  border-width: 2px;
+  border-left-width: 0px;
+=======
+  border-left-width: 5px;
+>>>>>>> 11/27
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-color: white;
+  z-index: 1000;
+}
+/*# sourceMappingURL=navbar.css.map */

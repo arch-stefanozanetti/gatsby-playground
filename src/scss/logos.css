@@ -1,0 +1,61 @@
+/**global colors**/
+/**global colors**/
+/**div dimentions properties**/
+/**display properties**/
+/**background properties**/
+/**positions properties**/
+/**padding properties**/
+/**margin properties**/
+/**border properties**/
+<<<<<<< HEAD
+=======
+/**text display properties**/
+/**font properties**/
+>>>>>>> 11/27
+/**image path**/
+.logo {
+  background-image: url("../images/PN_logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+<<<<<<< HEAD
+  height: 80px;
+  width: 250px;
+=======
+  height: 60px;
+  width: 300px;
+>>>>>>> 11/27
+  max-height: auto;
+  max-width: auto;
+  min-height: auto;
+  min-width: auto;
+<<<<<<< HEAD
+  position: fixed;
+  top: 10px;
+  right: 45%;
+  z-index: 1000;
+=======
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.icoBack {
+  background-image: url("../images/ico_back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  max-height: auto;
+  max-width: auto;
+  min-height: auto;
+  min-width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icoBack.hidden {
+  opacity: 0;
+>>>>>>> 11/27
+}
+/*# sourceMappingURL=logos.css.map */

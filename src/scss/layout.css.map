@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,mBAAmB;AFGnB,+BAA+B;AAW/B,wBAAwB;AAuCxB,2BAA2B;AAc3B,0BAA0B;AAS1B,wBAAwB;AAQxB,uBAAuB;AASvB,uBAAuB",
+    "sources": [
+        "layout.scss",
+        "media-queries.scss",
+        "colors.scss"
+    ],
+    "names": [],
+    "file": "layout.css"
+}

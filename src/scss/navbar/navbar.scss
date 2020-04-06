@@ -1,0 +1,57 @@
+@import "../media-queries";
+@import "../colors";
+@import "../layout";
+@import "../image-path";
+$zero: 0px;
+
+
+.navbar {
+    @include backgroundColor($primary);
+    @include flexContainer ($direction: row, $align-items: center, $justify-content: space-between);
+    @include divDimensions (100%, 80px);
+    @include position($position: fixed, $right: 0%);
+    z-index: 1000;
+    @include padding($top: null, $right: 15%, $bottom: null, $left: 15%);
+    transition: all 0.8s ease;
+
+    &.scroll{
+            @include backgroundColor($black);
+            @include divDimensions (100%, 50px);
+
+    }
+    
+    @include excludeDesktop {
+        @include flexContainer ($direction: row, $align-items: center, $justify-content: space-between);
+        @include divDimensions (100%, 70px, $max-height: null);
+        @include position($position: fixed, $right:null, $top:0px);
+        @include border($border-style: solid, $border-color: $white, $border-left-width: $zero, $border-top-width: $zero, $border-right-width: $zero, $border-bottom-width: 5px);
+    }
+}
+
+
+.logo {
+    @include backgroundImage ($background-image-url: ($imagePath+"logo-playground-white.png"), $background-position: center, $background-repeat: no-repeat, $background-size: contain);
+    @include divDimensions (140px, 70px);
+    position: relative;
+    @include excludeDesktop {
+        @include divDimensions (50px, 50px);
+        transform: translate(30px)
+    }
+}
+
+.burgerWrapper{
+    display: none;
+}
+
+.linkElement{
+    @include margin($top: null, $right: 30px, $bottom: null, $left: 30px);
+}
+
+
+
+.spacing {
+    @include margin($top: 3px, $bottom: 3px);
+
+}
+
+

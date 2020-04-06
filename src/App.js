@@ -9,13 +9,14 @@ import FormSection from './sections/FormSection';
 import Footer from './sections/Footer';
 import BannerCookies from './common/BannerCookies';
 import NavAndBanners from './data/NavAndBanners.json'
+import cards from './data/cards.json'
 
 function App() {
   return (
     <>
       <Header data={NavAndBanners} />
       <SliderSection />
-      <CardSection />
+      <CardSection data={cards} />
       <BannerSection data={NavAndBanners} />
       <TabSection />
       <FormSection />

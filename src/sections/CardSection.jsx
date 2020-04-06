@@ -1,14 +1,23 @@
-import React from "react";
-import Card from "../common/Card"
+import React, { Suspense } from "react";
+const Card = React.lazy(() => import("../common/Card"));
 
 
-const CardSection = () => {
+const CardSection = ({ data }) => {
+
+  const Cards = data.map((card, index) => {
     return (
-      <>
-        <Card id="WeAre" />
-        <Card id="WeDo" />
-        <Card id="Careers" />
-      </>
+          <Card title={card.title} content={card.content} image={card.image} />
     );
+  });
+
+  return (
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="CardSection">
+          {Cards}
+        </div>
+      </Suspense>
+    </>
+  );
 };
 export default CardSection;
