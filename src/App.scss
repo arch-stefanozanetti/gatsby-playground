@@ -56,7 +56,6 @@ body {
 .BannerWrapper{
     @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); //@include backgroundColor($primary, $opacity: 0.5);
     @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
-    @include padding($top: 70px, $right: 15%, $bottom: 70px, $left: 15%);
     
         &.right{
             @include backgroundColor($black);
@@ -65,16 +64,26 @@ body {
 }
 
 .textWrapper{
+        @include divDimensions (40%, 100%, $max-width: null, $max-height: auto, $min-width: null, $min-height: null);
         &.right{
             color: $white;
-            @include flexContainer ($direction: column, $align-items: null, $align-content: null, $justify-content: flex-start, $flex-wrap: null);
+            @include flexContainer ($direction: column, $align-items: flex-start, $align-content: center, $justify-content: center, $flex-wrap: null);
         }
         &.left{
             color: $black;
-            @include flexContainer ($direction: column, $align-items: flex-end, $align-content: flex-end, $justify-content: flex-end, $flex-wrap: null);
+            @include flexContainer ($direction: column, $align-items: flex-end, $align-content: center, $justify-content: center, $flex-wrap: null);
         }
 }
 
 .bannerImage{
-    @include divDimensions (70%, 100%, $max-width: null, $max-height: auto, $min-width: null, $min-height: null); 
+    @include divDimensions (60%, 100%, $max-width: null, $max-height: auto, $min-width: null, $min-height: null);
+        &.banner-we-are{
+            @include backgroundImage ($background-color: null, $background-image-url: "../images//banner-we-are.jpg", $background-position: center, $background-repeat: null, $background-size: cover);
+        } 
+        &.banner-we-do{
+            @include backgroundImage ($background-color: null, $background-image-url: "../images/banner-we-do.jpg", $background-position: center, $background-repeat: null, $background-size: cover);
+        } 
+        &.banner-carrers{
+            @include backgroundImage ($background-color: null, $background-image-url: "../images/banner-carrers.jpg", $background-position: center, $background-repeat: null, $background-size: cover);
+        } 
 }

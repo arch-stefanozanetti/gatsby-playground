@@ -8,7 +8,7 @@ const Banner = ({ id, title, content, button, image, Alignement }) => {
         <div className="paragraph">{content}</div>
         <button className="buttons">{button} > </button>
       </div>
-      <div className="bannerImage">{image}</div>
+      <div className={`bannerImage ${image}`} />
     </div>
   );
 };
