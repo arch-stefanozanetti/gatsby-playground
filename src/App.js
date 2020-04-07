@@ -19,7 +19,7 @@ function App() {
       <CardSection data={cards} />
       <BannerSection data={NavAndBanners} />
       <TabSection />
-      <FormSection />
+      <FormSection data={NavAndBanners}/>
       <Footer data={NavAndBanners} />
       <BannerCookies />
     </>

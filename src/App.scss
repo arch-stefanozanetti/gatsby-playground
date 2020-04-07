@@ -63,6 +63,14 @@ body {
         }
 }
 
+
+.FormSectionWrapper{
+    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
+    @include backgroundColor($black);
+}
+
+
 .textWrapper{
         @include divDimensions (40%, 100%, $max-width: null, $max-height: auto, $min-width: null, $min-height: null);
         &.right{
