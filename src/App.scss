@@ -46,7 +46,7 @@ body {
     box-sizing: border-box;
 
     @include excludeDesktop {
-        @include divDimensions (100%, 88%, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 600px); //@include backgroundColor($primary, $opacity: 0.5);
+        @include divDimensions (100%, 88%, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 600px);
         @include margin($top: 70px, $right: $zero, $bottom: $zero, $left: $zero);
         @include flexContainer ($direction: column, $align-items: top, $align-content: top, $justify-content: top, $flex-wrap: null);
     }
@@ -54,7 +54,7 @@ body {
 
 
 .BannerWrapper{
-    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px);
     @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
     
         &.right{
@@ -63,9 +63,30 @@ body {
         }
 }
 
+.FormWrapper{
+    @include divDimensions (auto, auto, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: null); 
+    @include flexContainer ($direction: row, $align-items: space-between, $align-content: space-between, $justify-content: space-between, $flex-wrap: null);
+
+}
+
+.input-50{
+    margin:5px;
+    @include divDimensions (48.7%, 40px, $max-width: null, $max-height: auto, $min-width: null, $min-height: null);
+        .end{
+            align-self: flex-end;
+        }
+}
+
+.input-100{
+    @include divDimensions (100%, 40px, $max-width: null, $max-height: auto, $min-width: null, $min-height: null);
+    margin:5px;
+    &.textArea{
+        height: 150px;
+    }
+}
 
 .FormSectionWrapper{
-    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); //@include backgroundColor($primary, $opacity: 0.5);
+    @include divDimensions (100%, 70vh, $max-width: 100%, $max-height: auto, $min-width: null, $min-height: 400px); 
     @include flexContainer ($direction: row, $align-items: center, $align-content: center, $justify-content: center, $flex-wrap: null);
     @include backgroundColor($black);
 }
